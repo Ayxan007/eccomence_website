@@ -1,0 +1,17 @@
+.footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+        font-size: 20px;
+        text-decoration: underline;
+        color: black;
+        }
+        img{
+            width: 50px;
+        }
+}
+.underline{
+    text-decoration: underline;
+}
