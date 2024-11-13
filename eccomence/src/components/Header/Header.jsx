@@ -1,6 +1,6 @@
 import React from "react";
-import Button from './Button';
-import '../components/header.css';
+import Button from '../Button/Button'
+import './header.css';
 
 const loginIcon = (
   <g id="SVGRepo_iconCarrier">

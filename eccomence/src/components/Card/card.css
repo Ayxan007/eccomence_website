@@ -21,7 +21,7 @@
     border-radius: 3px;
     cursor: pointer;
 }
-.home-title ul li :hover{
+.home-title ul li:hover{
     background-color: black;
     color: white;
 }

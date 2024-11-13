@@ -1,12 +1,12 @@
 import React from "react";
-import "../pages/home.css";
-import Card from "../components/Card";
-import imageCasual from "../images/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg";
-import imageCotton from "../images/71li-ujtlUL._AC_UX679_.jpg";
-import imageCasual2 from "../images/71YXzeOuslL._AC_UY879_.jpg";
-import imgBracelet from "../images/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg";
-import imgBracelet2 from "../images/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg";
-import imgWD2TB from "../images/61IBBVJvSDL._AC_SY879_.jpg"
+import "./home.css";
+import Card from "../../components/Card/Card";
+import imageCasual from "../../images/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg";
+import imageCotton from "../../images/71li-ujtlUL._AC_UX679_.jpg";
+import imageCasual2 from "../../images/71YXzeOuslL._AC_UY879_.jpg";
+import imgBracelet from "../../images/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg";
+import imgBracelet2 from "../../images/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg";
+import imgWD2TB from "../../images/61IBBVJvSDL._AC_SY879_.jpg"
 
 const cardData = [
   {
@@ -87,7 +87,12 @@ function Home() {
       {cardData.map((card, index) => (
         <Card
           key={index}
-          {...card}
+          title={card.title}
+          image={card.image}
+          text={card.text}
+          price={card.price}
+          BuyNow={card.BuyNow}
+          AddToCart={card.AddToCard}
         />
       ))}
       </div>

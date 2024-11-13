@@ -1,6 +1,6 @@
 import React from "react";
-import '../components/footer.css';
-import Logo from "../images/GitHub-Mark-ea2971cee799.png";
+import './footer.css';
+import Logo from "../../images/GitHub-Mark-ea2971cee799.png";
 
 function Footer(){
     return(
