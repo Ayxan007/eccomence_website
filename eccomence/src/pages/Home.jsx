@@ -87,12 +87,7 @@ function Home() {
       {cardData.map((card, index) => (
         <Card
           key={index}
-          title={card.title}
-          image={card.image}
-          text={card.text}
-          price={card.price}
-          BuyNow={card.BuyNow}
-          AddToCart={card.AddToCard}
+          {...card}
         />
       ))}
       </div>
