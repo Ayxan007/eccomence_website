@@ -18,8 +18,9 @@
   color: #00000080;
   cursor: pointer;
 }
-.page{
-  color: #000000E6;
+.header-main a{
+  color: #00000080;
+  text-decoration: none;
 }
 .header-buttons{
     display: flex;

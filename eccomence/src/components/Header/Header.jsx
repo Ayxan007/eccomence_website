@@ -1,5 +1,6 @@
 import React from "react";
-import Button from '../Button/Button'
+import { Link } from "react-router-dom";
+import Button from '../Button/Button';
 import './header.css';
 
 const loginIcon = (
@@ -31,10 +32,10 @@ function Header() {
         </div>
         <div className="header-main">
           <ul>
-            <li className="page">Home</li>
-            <li>Products</li>
-            <li>About</li>
-            <li>Contact</li>
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/products"><li>Products</li></Link>
+            <Link to="/about"><li>About</li></Link>
+            <Link to="/contact"><li>Contact</li></Link>
           </ul>
         </div>
         <div className="header-buttons">
