@@ -1,6 +1,6 @@
 import React from "react";
-import aboutCardData from "./AboutCardData";
-import AboutCard from "./AboutCard";
+import aboutCardData from "./aboutCardData";
+import AboutCard from "./aboutCard";
 import './about.css';
 
 function About(){

@@ -1,0 +1,51 @@
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name h2{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.name input{
+    padding: 10px 100px;
+    border: 1px solid #8c8c8c;
+    border-radius: 5px;
+}
+.email h2{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.email input{
+    padding: 10px 100px;
+    border: 1px solid #8c8c8c;
+    border-radius: 5px;
+}
+.message h2{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.message input{
+    padding: 100px;
+    border: 1px solid #8c8c8c;
+    border-radius: 5px;
+}
+.send-btn{
+    padding: 20px;
+}
+.send-btn button{
+    background-color: black;
+    padding: 15px 20px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}

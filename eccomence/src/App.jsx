@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home/Home";
+import Header from "./components/Header/index";
+import Footer from "./components/Footer/index";
+import Home from "./pages/Home/index";
 import Products from "./pages/Products/Products";
-import About from "./pages/About/About";
+import About from "./pages/About/index";
 import {BrowserRouter, Route , Routes } from "react-router-dom"
-import Contact from "./pages/Contact/Contact";
+import Contact from "./pages/Contact/index";
 
 function App() {
   return (

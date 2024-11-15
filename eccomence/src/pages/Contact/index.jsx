@@ -1,4 +1,5 @@
 import React from "react";
+import './contact.css';
 
 function Contact(){
     return(
@@ -20,7 +21,9 @@ function Contact(){
             <h2>Message</h2>
         <input type="text" placeholder="Enter your message" />
         </div>
+        <div className="send-btn">
         <button>Send</button>
+        </div>
         </div>
         </div>
         </>

@@ -14,6 +14,7 @@
     width: 65%;
     font-size: 20px;
     font-family: sans-serif;
+    color: gray;
 }
 .about-card-title{
     display: flex;

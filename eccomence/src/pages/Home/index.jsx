@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
-import Card from "../../components/Card/Card";
-import cardData from "../../components/Card/CardData";
+import Card from "../../components/Card/index";
+import cardData from "../../components/Card/cardData";
 
 function Home() {
   return (
