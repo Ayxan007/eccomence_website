@@ -34,8 +34,8 @@ function Home() {
           image={card.image}
           text={card.text}
           price={card.price}
-          BuyNow={card.BuyNow}
-          AddToCart={card.AddToCard}
+          buyNow={card.buyNow}
+          addToCart={card.addToCard}
         />
       ))}
       </div>
