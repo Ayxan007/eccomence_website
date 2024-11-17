@@ -11,9 +11,9 @@ const loginIcon = (
 );
 
 const registerIcon = (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-  <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="none" />
-  <path d="M12 8V16M16 12H8" stroke="black" strokeWidth="2" />
+  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24" height="24">
+  <circle cx="12" cy="12" r="10" fill="none" />
+  <path d="M12 8V16M16 12H8"  />
 </svg>
 );
 
@@ -23,7 +23,7 @@ const cartIcon = (
   </g>
 );
 
-function Header() {
+function Header({ cartItems }) {
   return (
     <div className="container">
       <div className="header">
@@ -39,9 +39,15 @@ function Header() {
           </ul>
         </div>
         <div className="header-buttons">
+          <Link to="/login">
           <Button icon={loginIcon} text="Login" />
+          </Link>
+          <Link to="/register">
           <Button icon={registerIcon} text="Register" />
-          <Button icon={cartIcon} text="Cart" />
+          </Link>
+          <Link to="/cart">
+          <Button icon={cartIcon} text={`Cart (${cartItems.length})`} />
+          </Link>
         </div>
       </div>
     </div>

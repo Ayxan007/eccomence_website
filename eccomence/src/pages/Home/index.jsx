@@ -1,9 +1,10 @@
 import React from "react";
 import "./home.css";
-import Card from "../../components/Card/index";
 import cardData from "../../components/Card/cardData";
+import Card from "../../components/Card/index";
 
-function Home() {
+function Home({ handleAddToCart }) {
+
   return (
     <>
       <div className="container">
@@ -35,7 +36,7 @@ function Home() {
           text={card.text}
           price={card.price}
           buyNow={card.buyNow}
-          addToCart={card.addToCard}
+          addToCart={() => handleAddToCart(card)}
         />
       ))}
       </div>
