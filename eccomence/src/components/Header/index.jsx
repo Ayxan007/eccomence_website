@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from '../Button/index';
-import './header.css';
+import Button from "../Button/index";
+import "./header.css";
 
 const loginIcon = (
   <g id="SVGRepo_iconCarrier">
@@ -11,10 +11,15 @@ const loginIcon = (
 );
 
 const registerIcon = (
-  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24" height="24">
-  <circle cx="12" cy="12" r="10" fill="none" />
-  <path d="M12 8V16M16 12H8"  />
-</svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+  >
+    <circle cx="12" cy="12" r="10" fill="none" />
+    <path d="M12 8V16M16 12H8" />
+  </svg>
 );
 
 const cartIcon = (
@@ -32,21 +37,30 @@ function Header({ cartItems }) {
         </div>
         <div className="header-main">
           <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/products">Products</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li> <Link to="/contact">Contact</Link></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/products">Products</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className="header-buttons">
           <Link to="/login">
-          <Button icon={loginIcon} text="Login" />
+            <Button icon={loginIcon} text="Login" />
           </Link>
           <Link to="/register">
-          <Button icon={registerIcon} text="Register" />
+            <Button icon={registerIcon} text="Register" />
           </Link>
           <Link to="/cart">
-          <Button icon={cartIcon} text={`Cart (${cartItems.length})`} />
+            <Button icon={cartIcon} text={`Cart (${cartItems.length})`} />
           </Link>
         </div>
       </div>

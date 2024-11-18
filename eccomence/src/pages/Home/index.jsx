@@ -4,7 +4,6 @@ import cardData from "../../components/Card/cardData";
 import Card from "../../components/Card/index";
 
 function Home({ handleAddToCart }) {
-
   return (
     <>
       <div className="container">
@@ -18,28 +17,28 @@ function Home({ handleAddToCart }) {
       </div>
       <div className="container">
         <div className="home-title">
-        <h3>Lates Products</h3>
-        <ul>
+          <h3>Lates Products</h3>
+          <ul>
             <li>All</li>
             <li>Men's Clothing</li>
             <li>Women's Clothing</li>
             <li>Jewelery</li>
             <li>Electronics</li>
-        </ul>
+          </ul>
         </div>
         <div className="cards">
-      {cardData.map((card, index) => (
-        <Card
-          key={index}
-          title={card.title}
-          image={card.image}
-          text={card.text}
-          price={card.price}
-          buyNow={card.buyNow}
-          addToCart={() => handleAddToCart(card)}
-        />
-      ))}
-      </div>
+          {cardData.map((card, index) => (
+            <Card
+              key={index}
+              title={card.title}
+              image={card.image}
+              text={card.text}
+              price={card.price}
+              buyNow={card.buyNow}
+              addToCart={() => handleAddToCart(card)}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

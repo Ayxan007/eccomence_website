@@ -1,6 +1,6 @@
 import React from "react";
 import cardData from "../../components/Card/cardData";
-import Card from "../../components/Card/index"
+import Card from "../../components/Card/index";
 
 function Products() {
   return (

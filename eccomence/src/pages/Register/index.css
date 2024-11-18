@@ -1,60 +1,60 @@
-.register-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.register-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.register-title h1{
-    font-size: 30px;
-    font-family: sans-serif;
+.register-title h1 {
+  font-size: 30px;
+  font-family: sans-serif;
 }
-.register{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.full-name h4{
-    font-size: 25px;
-    font-family: sans-serif;
+.full-name h4 {
+  font-size: 25px;
+  font-family: sans-serif;
 }
-.full-name input{
-    padding: 10px 100px;
-    border: 1px solid #8c8c8c;
-    border-radius: 5px;
+.full-name input {
+  padding: 10px 100px;
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
 }
-.register-email h4{
-    font-size: 25px;
-    font-family: sans-serif;
+.register-email h4 {
+  font-size: 25px;
+  font-family: sans-serif;
 }
-.register-email input{
-    padding: 10px 100px;
-    border: 1px solid #8c8c8c;
-    border-radius: 5px;
-} 
-.register-password h4{
-    font-size: 25px;
-    font-family: sans-serif;
+.register-email input {
+  padding: 10px 100px;
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
 }
-.register-password input{
-    padding: 10px 100px;
-    border: 1px solid #8c8c8c;
-    border-radius: 5px;
+.register-password h4 {
+  font-size: 25px;
+  font-family: sans-serif;
 }
-.already{
-    display: flex;
-    gap: 10px;
-    padding: 20px;
+.register-password input {
+  padding: 10px 100px;
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
 }
-.already p{
-    font-size: 15px;
-    font-family: sans-serif;
+.already {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
 }
-.register-btn button{
-    padding: 10px 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    font-family: sans-serif;
+.already p {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.register-btn button {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
 }

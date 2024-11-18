@@ -1,17 +1,17 @@
-.footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.footer p{
-    font-size: 20px;
-    text-decoration: underline;
-    color: black;
+.footer p {
+  font-size: 20px;
+  text-decoration: underline;
+  color: black;
 }
-.footer img{
-    width: 50px;
+.footer img {
+  width: 50px;
 }
-.underline{
-    text-decoration: underline;
+.underline {
+  text-decoration: underline;
 }

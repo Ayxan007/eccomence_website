@@ -1,21 +1,21 @@
-.text-with-background{
-    background-image: url('../../images/main.png.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    color: white;
-    padding: 20px; 
-    height: 300px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 100px;
+.text-with-background {
+  background-image: url("../../images/main.png.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
 }
-.text-with-background h2{
-    font-size: 45px;
-    font-family:  'Segoe UI';
+.text-with-background h2 {
+  font-size: 45px;
+  font-family: "Segoe UI";
 }
-.text-with-background p{
-    font-size: 15px;
-    font-family: sans-serif;
+.text-with-background p {
+  font-size: 15px;
+  font-family: sans-serif;
 }

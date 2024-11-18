@@ -4,7 +4,7 @@ import "./index.css";
 function Cart({ cartItems }) {
   const [defolt, setDefolt] = useState(() => {
     const storedCart = localStorage.getItem("cart");
-    
+
     if (storedCart) {
       return JSON.parse(storedCart);
     }
@@ -13,17 +13,17 @@ function Cart({ cartItems }) {
       acc[item.id] = 1;
       return acc;
     }, {});
-    
+
     return initialCart;
   });
 
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(defolt)); 
+    localStorage.setItem("cart", JSON.stringify(defolt));
   }, [defolt]);
 
   useEffect(() => {
     const initialCart = cartItems.reduce((acc, item) => {
-      acc[item.id] = defolt[item.id] || 1; 
+      acc[item.id] = defolt[item.id] || 1;
       return acc;
     }, {});
     setDefolt(initialCart);
@@ -45,17 +45,15 @@ function Cart({ cartItems }) {
     });
   };
 
-
   const calculateTotalAmount = () => {
     const totalPrice = cartItems.reduce((total, item) => {
-      return total + Number(item.price); 
-    }, 0); 
-  
-    return totalPrice + 30; 
+      const price = parseFloat(item.price.replace("$", "").replace(",", "."));
+      return total + price * defolt[item.id];
+    }, 0);
+
+    return totalPrice + 30;
   };
-  
-  
-  
+
   return (
     <div className="container">
       <div className="cart-title">
@@ -107,7 +105,7 @@ function Cart({ cartItems }) {
           </div>
           <p>Product Count: {cartItems.length}</p>
           <p>Shipping: $30.00</p>
-          <p>Total Amount: ${calculateTotalAmount()}</p> 
+          <p>Total Amount: ${calculateTotalAmount()}</p>
         </div>
       </div>
     </div>

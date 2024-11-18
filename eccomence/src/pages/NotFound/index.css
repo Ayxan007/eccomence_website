@@ -1,15 +1,15 @@
-.error-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.error-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.error-title h2{
-    font-size: 100px;
-    font-family: sans-serif;
-    font-weight: bold;
+.error-title h2 {
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
-.error-title p{
-    font-size: 30px;
-    font-family: sans-serif;
+.error-title p {
+  font-size: 30px;
+  font-family: sans-serif;
 }

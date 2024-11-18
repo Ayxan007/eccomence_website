@@ -10,7 +10,7 @@
   font-size: 13px;
   font-weight: bold;
 }
-.header-main ul{
+.header-main ul {
   list-style: none;
   font-family: sans-serif;
   display: flex;
@@ -18,18 +18,18 @@
   color: #00000080;
   cursor: pointer;
 }
-.header-main a{
+.header-main a {
   color: #00000080;
   text-decoration: none;
 }
-.header-buttons{
-    display: flex;
-    gap: 30px;
+.header-buttons {
+  display: flex;
+  gap: 30px;
 }
-.header-buttons a{
+.header-buttons a {
   text-decoration: none;
 }
-.header-buttons button{
+.header-buttons button {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -37,10 +37,10 @@
   padding: 6px 12px;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   color: #212529;
 }
-.header-buttons :hover{
+.header-buttons :hover {
   background-color: black;
   color: white;
   border-radius: 5px;
